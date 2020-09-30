@@ -2,7 +2,7 @@
   "name": "confusion",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://iamsarthakk.github.io/ReactWeb",
+  "homepage": "http://iamsarthakk.github.io/ReactWeb/",
   "dependencies": {
     "-": "0.0.1",
     "bootstrap": "4.0.0",

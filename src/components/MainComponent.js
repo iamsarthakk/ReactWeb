@@ -18,8 +18,8 @@ class Main extends Component {
         super(props);
         this.state = {
             dishes: DISHES,  // lifting the state up
-            comments: COMMENTS, 
-            leaders: LEADERS, 
+            comments: COMMENTS,
+            leaders: LEADERS,
             promotions: PROMOTIONS
         };
     }
@@ -29,30 +29,32 @@ class Main extends Component {
             return(
                 <Home dish={this.state.dishes.filter((dish) => dish.featured)[0]}
                     promotion={this.state.promotions.filter((promo) => promo.featured)[0]}
-                    leader={this.state.leaders.filter((leader) => leader.featured)[0]}    
+                    leader={this.state.leaders.filter((leader) => leader.featured)[0]}
                 />
             );
           }
 
         const DishWithId = ({match}) => {
+          // console.log(parseInt(match.params.dishID,10));
             return (
                 // 10 -> base 10
-                <DishDetail dish={this.state.dishes.filter((dish) => dish.id === parseInt(match.params.dishId,10))[0]} 
-                    comments={this.state.comments.filter((comment) => comment.id === parseInt(match.params.dishId,10))}
+                <DishDetail dish={this.state.dishes.filter((dish) => dish.id===parseInt(match.params.dishID,10))[0]}
+                    comments={this.state.comments.filter((comment) => comment.id === parseInt(match.params.dishID,10))}
                 />
+
             );
-        }  
+        }
 
         return (
             <div>
                 <Header />
-                    <Switch> 
+                    <Switch>
                         <Route path='/home' component={HomePage} />
                         <Route exact path="/menu" component={() => <Menu dishes={this.state.dishes} />} />
                         <Route path="/menu/:dishID" component={DishWithId} />
                         <Route exact path="/contactus" component={Contact} />
                         <Route exact path="/aboutus" component={() => <About leaders={this.state.leaders} />} />
-                        <Redirect to="/home" />  
+                        <Redirect to="/home" />
                     </Switch>
                 <Footer />
             </div>
@@ -62,5 +64,5 @@ class Main extends Component {
 
 export default Main;
 
-/* <Redirect to="/Home" /> this is a default path. anything dosemt match Home or Menu, 
+/* <Redirect to="/Home" /> this is a default path. anything dosemt match Home or Menu,
 will be returned to Home */
