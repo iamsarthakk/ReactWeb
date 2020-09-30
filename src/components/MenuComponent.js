@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
     // function RenderMenuItem (props) {}
     function RenderMenuItem ({dish, onClick}) {
         return (
-            <Card> 
-                <Link to={'/menu/${dish.id}'} >
-                    <CardImg width="100%" src={dish.image} alt={dish.name} />                    
+            <Card>
+                <Link to={`/menu/${dish.id}`} >
+                    <CardImg width="100%" src={dish.image} alt={dish.name} />
                         <CardImgOverlay>
                             <CardTitle> {dish.name} </CardTitle>
-                        </CardImgOverlay>  
-                </Link>      
+                        </CardImgOverlay>
+                </Link>
             </Card>
         );
     }
@@ -22,17 +22,17 @@ import { Link } from 'react-router-dom';
         const menu = props.dishes.map((dish) => {
             return (
                 // key: every item require key attribute to specift it.
-                // the key helps React to recognise each one of these elements, uniquely. 
+                // the key helps React to recognise each one of these elements, uniquely.
                 <div key={dish.id} className="col-12 col-md-5 m-1">
                     <RenderMenuItem dish={dish} />
-                </div>    
+                </div>
             );
         }); // take the JS objects
 
         console.log('Menu component render invoked')
 
          // return what needs to diaplay on the UI in this conponent. (return view)
-        return ( 
+        return (
             <div className="container">
                 <div className="row">
                     <Breadcrumb>
@@ -42,8 +42,8 @@ import { Link } from 'react-router-dom';
                     <div className="col-12">
                         <h3>Menu</h3>
                         <hr />
-                    </div>    
-                </div>    
+                    </div>
+                </div>
                 <div className="row">
                     {menu}
                 </div>
