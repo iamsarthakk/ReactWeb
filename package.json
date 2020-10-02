@@ -5,6 +5,7 @@
   "homepage": "http://iamsarthakk.github.io/ReactWeb/",
   "dependencies": {
     "-": "0.0.1",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
     "add": "^2.0.6",
     "bootstrap": "4.0.0",
     "bootstrap-social": "5.1.1",
@@ -44,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/helper-create-regexp-features-plugin": "^7.10.4",
     "font-awesome": "^4.7.0"
   }
 }

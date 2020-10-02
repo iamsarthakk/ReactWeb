@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb ,BreadcrumbItem,
-  Modal, ModalHeader, ModalBody, Button, Form, FormGroup, Input, Label, Row, Col} from 'reactstrap';
+  Modal, ModalHeader, ModalBody, Button, Label, Row} from 'reactstrap';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Link } from 'react-router-dom';
 
@@ -71,6 +71,9 @@ class CommentForm extends Component {
                           <Control.textarea model=".message" id="message" name="message"
                               rows="6"
                               className="form-control" />
+                      </Row>
+                      <Row>
+                        <Button type="submit" value="submit" color="primary">Submit</Button>
                       </Row>
 
                     </LocalForm>
