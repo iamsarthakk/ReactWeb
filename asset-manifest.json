@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/ReactWeb/static/css/main.e731f651.chunk.css",
-    "main.js": "/ReactWeb/static/js/main.68933a54.chunk.js",
-    "main.js.map": "/ReactWeb/static/js/main.68933a54.chunk.js.map",
+    "main.css": "/ReactWeb/static/css/main.e2547947.chunk.css",
+    "main.js": "/ReactWeb/static/js/main.deffa8f6.chunk.js",
+    "main.js.map": "/ReactWeb/static/js/main.deffa8f6.chunk.js.map",
     "runtime-main.js": "/ReactWeb/static/js/runtime-main.e18d1312.js",
     "runtime-main.js.map": "/ReactWeb/static/js/runtime-main.e18d1312.js.map",
     "static/css/2.c690aa35.chunk.css": "/ReactWeb/static/css/2.c690aa35.chunk.css",
-    "static/js/2.25ea9ec8.chunk.js": "/ReactWeb/static/js/2.25ea9ec8.chunk.js",
-    "static/js/2.25ea9ec8.chunk.js.map": "/ReactWeb/static/js/2.25ea9ec8.chunk.js.map",
+    "static/js/2.7be8bd37.chunk.js": "/ReactWeb/static/js/2.7be8bd37.chunk.js",
+    "static/js/2.7be8bd37.chunk.js.map": "/ReactWeb/static/js/2.7be8bd37.chunk.js.map",
     "index.html": "/ReactWeb/index.html",
-    "precache-manifest.38ff827f05f9756f81c71346c6cb62cb.js": "/ReactWeb/precache-manifest.38ff827f05f9756f81c71346c6cb62cb.js",
+    "precache-manifest.274c45dba20ce7f81439f6ec9d355ca6.js": "/ReactWeb/precache-manifest.274c45dba20ce7f81439f6ec9d355ca6.js",
     "service-worker.js": "/ReactWeb/service-worker.js",
     "static/css/2.c690aa35.chunk.css.map": "/ReactWeb/static/css/2.c690aa35.chunk.css.map",
-    "static/css/main.e731f651.chunk.css.map": "/ReactWeb/static/css/main.e731f651.chunk.css.map",
+    "static/css/main.e2547947.chunk.css.map": "/ReactWeb/static/css/main.e2547947.chunk.css.map",
     "static/media/font-awesome.css": "/ReactWeb/static/media/fontawesome-webfont.fee66e71.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.e18d1312.js",
     "static/css/2.c690aa35.chunk.css",
-    "static/js/2.25ea9ec8.chunk.js",
-    "static/css/main.e731f651.chunk.css",
-    "static/js/main.68933a54.chunk.js"
+    "static/js/2.7be8bd37.chunk.js",
+    "static/css/main.e2547947.chunk.css",
+    "static/js/main.deffa8f6.chunk.js"
   ]
 }
